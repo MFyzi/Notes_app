@@ -1,0 +1,25 @@
+.home_container{
+    height:95vh;
+    width: 95vw;
+    border-radius: 28px;
+    opacity: .67;
+    margin: auto auto;
+    background-color: rgb(197, 197, 197);
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.25), inset 6px 5px 11px -5px #B9B2B2;
+    background: #FDFDFD;
+    opacity: 0.6;  
+    position: relative; 
+    
+    .search{
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+    } 
+
+    &_files_grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 2rem;
+    }
+}

@@ -1,0 +1,19 @@
+@use './util/' as u;
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: u.$primary_f;
+    // height: 100vh;
+    background-color: u.$background_grey;
+}
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}

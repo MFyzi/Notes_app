@@ -1,0 +1,29 @@
+@use '../scss/util/' as u;
+.search_container{
+    margin: auto auto;
+    display: flex;
+    align-items: center;
+    input{
+        border: .5px solid rgb(0, 0, 0);
+        background: #FEFEFE;
+        opacity: 0.66;
+        box-shadow: inset 3px 2px 6px 3px rgba(0, 0, 0, 0.27);
+        border-radius: 16px;
+        width: 50vw;
+        font-size: 1rem;
+        padding-inline: 20px;
+        padding-block: 5px;
+    }
+    &_lens{
+        font-size: .8rem;
+        margin-left: -2rem;
+
+    }
+    &_newFile{
+        font-size: 1.5rem;
+        margin-left: 2rem;
+        display: flex;
+        color: u.$purple_c;
+
+    }
+}

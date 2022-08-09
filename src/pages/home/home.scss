@@ -1,17 +1,20 @@
+@use '../../scss/util/' as u;
 .home_container{
     height:95vh;
-    width: 95vw;
+    width: min(95vw,1440px);
     border-radius: 28px;
     opacity: .67;
-    margin: auto auto;
     background-color: rgb(197, 197, 197);
     box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.25), inset 6px 5px 11px -5px #B9B2B2;
     background: #FDFDFD;
-    opacity: 0.6;  
-    position: relative; 
-    
+    opacity: 0.6; 
+
+    @include u.breakpoint(medium){
+        height: 80vh;
+    }
+
     .search{
-        height: 30vh;
+        margin-block: 5rem;
         display: flex;
         justify-content: center;
     } 
@@ -19,7 +22,12 @@
     &_files_grid{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
+        grid-template-rows: auto;
         gap: 2rem;
+        
+        @include u.breakpoint(medium){
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+        }
     }
 }
